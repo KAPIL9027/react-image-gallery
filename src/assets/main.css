@@ -873,3 +873,13 @@ video {
     gap: 1rem;
   }
 }
+
+@media (min-width: 1025px) {
+  .min-\[1025px\]\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .min-\[1025px\]\:gap-4 {
+    gap: 1rem;
+  }
+}
