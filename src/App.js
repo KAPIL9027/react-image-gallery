@@ -22,7 +22,7 @@ function App() {
         {!loading && images.length === 0 && <h1 className="text-5xl text-center mx-auto mt-32">No Images Found!!!</h1>}
         {loading ? <h1 className="text-6xl text-center mx-auto mt-32">Loading...</h1>
         :
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid max-[400px]:grid-cols-1 max-[767px]:grid-cols-2 max-[1024px]:grid-cols-3 max-[1024px]:gap-4">
         {
           
           images.map((image,index)=> <ImageCard key={image.id+index} tags={image.tags} user={image.user} url={image.webformatURL} downloads={image.downloads} views={image.views} likes={image.likes}/>)
